@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>POSH</title>
+    <style media="screen">
+      .container {
+        width: 90%;
+        max-width: 960px;
+        border: 3px solid gold;
+        margin: 100px auto;
+        position: absolute;
+        height: 400px;
+      }
+
+      .container > div {
+        width: 100px;
+        height: 100px;
+        /*background: red;*/
+        border: 1px solid red;
+        /*display: inline-block;*/
+      }
+
+      .container .one {
+        position: relative;
+        right: 0;
+        /*margin-top: 10px;
+        padding: 10px;
+        border: 10px solid red;*/
+        /*margin-left: 100px;*/
+      }
+
+      .two {
+        position: absolute;
+        /*top: 100px;*/
+        /*left: 0;*/
+        left: 0;
+      }
+
+      .three {
+        position: absolute;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="one">
+        1
+      </div>
+      <div class="two">
+        2
+      </div>
+      <div class="three">
+        3
+      </div>
+    </div>
+  </body>
+</html>
