@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS 3 Reference</title>
+    <style media="screen">
+      * {
+        color: white;
+      }
+
+      .border-radius {
+        width: 400px;
+        height: 200px;
+        /* linear gradient example */
+        /*background: linear-gradient(to bottom right,red, yellow);*/
+
+        /* radial gradient example */
+        background: radial-gradient(red, yellow, green);
+
+
+        border-radius: 100px;
+
+        /*background-image: url(https://a2.muscache.com/airbnb/static/logos/belo-1200x630-a0d52af6aba9463c82017da13912f19f.png);
+        background-size: cover;*/
+
+        -webkit-transition: 2s; /* For Safari 3.1 to 6.0 */
+        transition: 2s;
+      }
+
+      div {
+        margin: 50px 0;
+      }
+
+      .border-radius:hover {
+        width: 200px;
+        height: 400px;
+      }
+
+
+      /* CSS Animate Structure */
+      /* animation name */
+      /* animation duration */
+      /* keyframes */
+
+      .border-radius-animated {
+        width: 400px;
+        height: 200px;
+        animation-name: anim;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        background-color: red;
+      }
+
+      @keyframes anim {
+        0%   {background-color: red;}
+        50%  {background-color: blue;}
+        100% {
+          background-color: green;
+          transform: rotate(40deg);
+        }
+
+
+        /*from { background-color: red; }
+        to {
+          background-color: blue;
+
+        }*/
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="border-radius">
+      Rounded Corners
+    </div>
+
+    <div class="border-radius-animated">
+      Animate!
+    </div>
+
+  </body>
+</html>
